@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: Lato;
+  background-color: #ffffff;
+}
+
+.logo__body {
+  max-width: 1920px;
+  height: 1080px;
+  background: url("../../bem/img/logo/bg_header_743.jpg") 50%/cover no-repeat;
+  padding: 165px 0 0 0;
+}
+.logo__binary {
+  width: 195px;
+  height: 123px;
+  background-image: url("../../bem/img/logo/logo.png");
+  margin: 0 auto 159px auto;
+}
+.logo__title {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  margin: 0 0 227px 0;
+}
+.logo__title::after {
+  content: "";
+  position: absolute;
+  width: 105px;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 50%;
+  margin: 0 0 0 -49px;
+}
+.logo__subtitle {
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 0 0 49px 0;
+}
+.logo__button {
+  width: 182px;
+  height: 47px;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 75px auto;
+  text-decoration: none;
+}
+.logo__button:visited {
+  color: #ffffff;
+}
+.logo__button:active {
+  background-color: #ffffff;
+  color: #000000;
+}
+.logo__button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.logo__arrow-down {
+  display: block;
+  width: 17px;
+  height: 10px;
+  background: url("../../bem/img/logo/Arrow-down.png") right no-repeat;
+  margin: 0 auto;
+}
+
+.button__text {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.about__body {
+  max-width: 823px;
+  margin: 0 auto;
+}
+.about__header {
+  margin: 0 0 69px 0;
+}
+.about__title {
+  padding: 0 0 35px 0;
+}
+.about__text {
+  max-width: 688px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #868585;
+  text-align: center;
+  padding: 37px 0 0 0;
+  margin: 0 auto;
+}
+.about__row {
+  display: flex;
+  margin: 0 -15px;
+}
+.about__column {
+  flex: 0 0 33.333%;
+  padding: 0 15px;
+}
+
+.title {
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  text-align: center;
+  position: relative;
+  padding: 0 0 30px 0;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 81px;
+  height: 2px;
+  background-color: #000000;
+  bottom: 0;
+  left: 50%;
+  margin: 0 0 0 -41px;
+}
+
+.item-about__icon {
+  margin: 0 auto 40px auto;
+  display: flex;
+  border: 2px solid #f1f1f1;
+  border-radius: 50%;
+  width: 92px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+}
+.item-about__title {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-align: center;
+  margin: 0 0 35px 0;
+}
+.item-about__text {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #868585;
+  text-align: center;
+}

@@ -1,0 +1,180 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+    font-family: Lato;
+    background-color: #ffffff;
+}
+
+.logo {
+
+    &__body {
+        max-width: 1920px;
+        height: 1080px;
+        background: url('../../bem/img/logo/bg_header_743.jpg') 50%/cover no-repeat;
+        padding: 165px 0 0 0;
+    }
+
+    &__binary {
+        width: 195px;
+        height: 123px;
+        background-image: url('../../bem/img/logo/logo.png');
+        margin: 0 auto 159px auto;
+    }
+
+    &__title {
+        font-size: 34px;
+        line-height: 40px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #ffffff;
+        text-align: center;
+        position: relative;
+        margin: 0 0 227px 0;
+        &::after {
+            content: '';
+            position:absolute;
+            width: 105px;
+            height: 2px;
+            background-color: #ffffff;
+            bottom: 0;
+            left: 50%;
+            margin: 0 0 0 -49px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 26px;
+        font-weight: 400;
+        text-transform: none;
+        padding: 0 0 49px 0;
+    }
+
+    &__button {
+        width: 182px;
+        height: 47px;
+        border: 1px solid #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 75px auto;
+        text-decoration: none;
+        &:visited {
+            color: #ffffff;
+        }
+        &:active {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        &:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    }
+    
+    &__arrow-down {
+        display: block;
+        width: 17px;
+        height: 10px;
+        background: url('../../bem/img/logo/Arrow-down.png') right no-repeat;
+        margin: 0 auto;
+    }
+}
+.button {
+    &__text {
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 400;
+            letter-spacing: 0.06em;
+    }
+}
+
+
+.about {
+
+    &__body {
+        max-width: 823px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        margin: 0 0 69px 0;
+    }
+
+    &__title {
+        padding:  0 0 35px 0;
+    }
+
+    &__text {
+    max-width: 688px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #868585;
+    text-align: center;
+    padding: 37px 0 0 0;
+    margin: 0 auto;
+    }
+
+    &__row {
+        display: flex;
+        margin: 0 -15px;
+    }
+
+    &__column {
+        flex: 0 0 33.333%;
+        padding: 0 15px;
+    }
+}
+.title {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    text-align: center;
+    position: relative;
+    padding: 0 0 30px 0;
+    &::after {
+        content: '';
+        position:absolute;
+        width: 81px;
+        height: 2px;
+        background-color: #000000;
+        bottom: 0;
+        left: 50%;
+        margin: 0 0 0 -41px;
+    }
+}
+.item-about {
+
+    &__icon {
+        margin: 0 auto 40px auto;
+        display: flex;
+        border: 2px solid #f1f1f1;
+        border-radius: 50%;
+        width: 92px;
+        height: 92px;
+        justify-content:center;
+        align-items: center;
+    }
+
+    &__title {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    text-align: center;
+    margin: 0 0 35px 0;
+    }
+
+    &__text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #868585;
+    text-align: center;
+    }
+}
