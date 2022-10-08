@@ -60,7 +60,7 @@ body {
         justify-content: center;
         align-items: center;
         margin: 0 auto 75px auto;
-        text-decoration: none;
+        transition: background .2s linear, color .2s linear;
         &:visited {
             color: #ffffff;
         }
@@ -91,12 +91,45 @@ body {
     }
 }
 
+.menu {
+
+    &__body {
+        max-width: 1920px;
+        height: 58px;
+        display: flex;
+        box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.05);
+        margin: 0 auto 130px auto;
+        outline: 1px solid #f1f1f1;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.nav {
+
+    &__link {
+        margin: 0 30px;
+        font-weight: 400;
+        color: #3c3c3c;
+        transition: color .2s linear;
+        text-decoration: none;
+        &:hover {
+            font-style: 15px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: #ada074;
+        }
+    }
+}
+
+
 
 .about {
 
     &__body {
         max-width: 823px;
-        margin: 0 auto;
+       // height: 732px;
+        margin: 0 auto 95px auto;
+        
     }
 
     &__header {
@@ -136,7 +169,7 @@ body {
     letter-spacing: 0.16em;
     text-align: center;
     position: relative;
-    padding: 0 0 30px 0;
+    padding: 0 0 40px 0;
     &::after {
         content: '';
         position:absolute;
@@ -176,5 +209,46 @@ body {
     font-weight: 300;
     color: #868585;
     text-align: center;
+    }
+}
+
+
+.portfolio {
+
+    &__body {
+        max-width: 1920px;
+        height: 1671px;
+        padding: 107px 0 0 0;
+        background-color: #f3f3f3;
+        margin: 0 auto;
+    }
+
+    &__header {
+        position: relative;
+        margin: 0 0 50px 0;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 136px 0;
+    }
+	&__image {
+        height: 1671px-371px-173px;
+        width: 1920px-408px-409px;
+        margin: 0 auto;
+        display: flex;
+	}
+
+}
+
+.item-portfolio {
+
+    &__image {
+        width: 538px;
+        height: 365px;
+        background-color: #eaeaea;
+        margin: 16px;
     }
 }
