@@ -237,10 +237,30 @@ body {
 	&__image {
         height: 1671px-371px-173px;
         width: 1920px-408px-409px;
-        margin: 0 auto;
+        margin: 0 auto 64px auto;
         display: flex;
 	}
 
+    &__button {
+        width: 182px;
+        height: 47px;
+        border: 1px solid #191919;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        transition: background .2s linear, color .2s linear;
+        &:visited {
+            color: #191919;
+        }
+        &:active {
+            background-color: #191919;
+            color: white;
+        }
+        &:hover {
+            background-color: #191919;
+            color: white;
+        }
 }
 
 .item-portfolio {
@@ -252,3 +272,61 @@ body {
         margin: 16px;
     }
 }
+}
+
+.partners {
+
+    &__body {
+        max-width: 1920px;
+        height: 440px;
+        background: url('../../bem/img/partners/bg_header_partners.png') 50%/cover no-repeat;
+    }
+
+    &__title {
+        display: flex;
+        font-size: 30.4px;
+        line-height: 1.2;
+        font-weight: 300;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        justify-content: center;
+        padding: 100px 0 102px 0;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.logo {
+
+    &__1 {
+        width: 35px;
+        height: 47px;
+        background-image: url('../../bem/img/partners/logo_1.png');
+        margin: 0 109px 0 0;
+    }
+
+    &__2 {
+        width: 52px;
+        height: 62px;
+        background-image: url('../../bem/img/partners/logo_2.png');
+        margin: 0 115px 0 0;
+    }
+
+    &__3 {
+        width: 53px;
+        height: 63px;
+        background-image: url('../../bem/img/partners/logo_3.png');
+        margin: 0 109px 0 0;
+    }
+
+    &__4 {
+        width: 111px;
+        height: 40px;
+        background-image: url('../../bem/img/partners/logo_4.png');
+    }
+}
+
+//contact height: 820px;
